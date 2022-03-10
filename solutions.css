@@ -1,0 +1,148 @@
+.ex-1-square {
+  transition: background-color 01s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+
+.ex-2-square {
+  transition: width 3s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+
+
+.ex-3-square {
+  transition: border-radius 1s;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+
+
+.ex-4-square {
+  transition: opacity 1s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+
+
+.ex-5-square {
+  transition: transform 2s;
+}
+
+.ex-5-square:hover{
+  transform:scale(2); 
+}
+
+.ex-5-square:active{
+  transform:scale(0.5); 
+}
+
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+.ex-7-img{
+  transition: filter 2s;
+}
+
+.ex-7-img:hover {
+  filter: saturate(180%) brightness(150%);
+}
+
+
+.ex-8-img {
+  transition: all 1s;
+}
+
+.ex-8-img:hover {
+  border-radius: 30px;
+  filter: saturate(80%) sepia(60%);
+}
+
+.ex-9-img{
+  transition: all 2s;
+}
+
+.ex-9-img:hover{
+  transform: scale(1.5);
+  border-radius: 30px;
+  filter: grayscale(80%) brightness(60%);
+}
+
+.ex-10-icon{
+ 
+}
+.ex-10-icon{
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  100% {
+  transform: rotate(360deg);
+  }
+}
+
+.ex-11-icon:hover{
+  animation-name: spin-reverse;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes spin-reverse {
+  75% {
+  transform: rotate(280deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.e-12-button{
+  position: relative;
+}
+
+.ex-12-top-white, .ex-12-bottom-white{
+  position: absolute;
+}
+
+
+.ex-12-top-white:hover {
+  animation-name: move-right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-right {
+  50%{
+    top: -10px;
+    right: calc(100% - 60px);
+  }
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-12-bottom-white {
+  animation-name: move-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
